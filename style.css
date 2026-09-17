@@ -6,8 +6,8 @@
   --ink:#1b1620;
   --muted:#6f6670;
   --line:#ece4e8;
-  --accent:#b80b4d;          /* SJSP-framboos */
-  --accent-soft:#fce4ee;
+  --accent:#0f7a4f;          /* SJSP-groen (leerkrachten) */
+  --accent-soft:#e3f5ec;
   --done:#16a34a;            /* groen = afgevinkt (succes) */
   --done-soft:#e9f8ee;
   --font-display:"Cal Sans","DM Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
@@ -39,7 +39,7 @@ h1{font-family:var(--font-display);font-weight:600;font-size:32px;margin:6px 0 4
   transition:transform .2s ease, box-shadow .2s ease;
 }
 .brand-logo svg{width:27px;height:27px;display:block;transition:transform .5s ease}
-.brand-logo:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(184,11,77,.28)}
+.brand-logo:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(15,122,79,.28)}
 .brand-logo:hover svg{transform:rotate(90deg)}       /* wiel draait even mee */
 .brand-logo:focus-visible{outline:3px solid var(--accent-soft);outline-offset:2px}
 
@@ -105,7 +105,7 @@ h1{font-family:var(--font-display);font-weight:600;font-size:32px;margin:6px 0 4
   padding:9px 18px;cursor:pointer;font:inherit;font-weight:600;font-size:14px;
   box-shadow:var(--shadow);
 }
-.print-btn:hover{background:#2f5fd8}
+.print-btn:hover{background:#0c6640}
 
 .detail-head{margin-bottom:20px}
 .detail-head h1{margin:6px 0 6px}
