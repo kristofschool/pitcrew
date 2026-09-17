@@ -19,28 +19,37 @@ const PLANS = [
     info:"Print- of kopieerprobleem? Doorloop deze stappen voor je het ICT-team contacteert.",
     sections:[
       {
-        title:"1 — Papier vastgelopen?",
+        title:"1 — Scannen & doorsturen",
+        steps:[
+          {title:"Open de KyoceraApp en kies de juiste printer"},
+          {title:"Kies 'Scannen' en vul de juiste AccountID in"},
+          {title:"Laat je gsm of iPad open staan tot het scannen afgelopen is"},
+          {title:"Sla het bestand op"},
+          {title:"Gebruik geen 'Scannen en mailen'", note:"Dat gebruiken we eigenlijk niet meer — dit werkt meestal niet."}
+        ]
+      },
+      {
+        title:"2 — Ongeldig taakID?",
+        steps:[
+          {title:"Vul altijd de juiste code in", note:"Zo komt de factuur bij de juiste persoon terecht."},
+          {title:"Klascodes enkel in zwart/wit"},
+          {title:"In kleur printen kan via je eigen code"},
+          {title:"Grote aantallen in kleur? Meld dit aan ICT via de helpdesk", note:"Zo kunnen we dit doorrekenen aan de leerlingen."}
+        ]
+      },
+      {
+        title:"3 — Vlekken bij kleur",
+        steps:[
+          {title:"Dit is een gekend aandachtspunt", note:"Volgens de hersteller printen we te weinig in kleur, dus het mag gerust wat meer. Via de instellingen kan je het wel proper krijgen (instructies volgen nog)."}
+        ]
+      },
+      {
+        title:"4 — Papier vastgelopen?",
         steps:[
           {title:"Open de kleppen van het toestel volgens de aanwijzingen op het scherm"},
           {title:"Verwijder het vastzittend papier voorzichtig", note:"Trek in de richting waarin het papier normaal doorloopt, niet tegendraads."},
           {title:"Sluit alle kleppen goed", note:"Het toestel start pas opnieuw als alles goed dicht zit."},
           {title:"Probeer opnieuw af te drukken of te kopiëren"}
-        ]
-      },
-      {
-        title:"2 — Geen afdruk of foutmelding?",
-        steps:[
-          {title:"Controleer het scherm van het toestel op een foutmelding"},
-          {title:"Controleer of er genoeg papier en toner/inkt aanwezig is"},
-          {title:"Controleer of je met de juiste printer verbonden bent", note:"Vooral na een verhuis naar een ander lokaal loopt dit weleens fout."},
-          {title:"Herstart het toestel indien nodig"}
-        ]
-      },
-      {
-        title:"3 — Nog niet opgelost?",
-        steps:[
-          {title:"Maak een helpdeskticket aan via Smartschool"},
-          {title:"Dringend nodig? Ga langs het ICT-lokaal tijdens de openingsuren"}
         ]
       }
     ]
