@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>pITstop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ===== OVERZICHT / GRID ===== -->
+  <section id="home">
+    <header>
+      <div class="brand">
+        <a class="brand-logo" href="https://nl.wikipedia.org/wiki/Pit_(motorsport)" target="_blank" rel="noopener"
+           title="Wat is een pitstop?" aria-label="Wat is een pitstop? (opent Wikipedia in een nieuw tabblad)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.2"/>
+            <line x1="12" y1="3" x2="12" y2="8.8"/><line x1="12" y1="15.2" x2="12" y2="21"/>
+            <line x1="3" y1="12" x2="8.8" y2="12"/><line x1="15.2" y1="12" x2="21" y2="12"/>
+          </svg>
+        </a>
+        <div>
+          <div class="eyebrow">Voor leerlingen</div>
+          <h1 style="margin:2px 0 0">pITstop</h1>
+        </div>
+      </div>
+      <div class="sub" style="margin-top:10px">Vragen voor het ICT-team? Kijk eerst hier voor het antwoord.</div>
+    </header>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <!-- ===== DETAIL ===== -->
+  <section class="detail" id="detail">
+    <div class="detail-topbar">
+      <button class="back" onclick="showHome()">← Terug naar overzicht</button>
+      <button class="print-btn" onclick="window.print()">🖨️ Print / PDF</button>
+    </div>
+    <div class="detail-head">
+      <div class="eyebrow" id="d-eyebrow"></div>
+      <h1 id="d-title"></h1>
+      <div class="sub" id="d-sub"></div>
+      <div class="progress-row">
+        <div class="bar"><i id="d-bar"></i></div>
+        <div class="prog-label" id="d-prog"></div>
+      </div>
+    </div>
+    <div id="d-info"></div>
+    <ol class="steps" id="d-steps"></ol>
+    <div class="foot">
+      <button class="reset" onclick="resetCurrent()">Alles terugzetten</button>
+    </div>
+  </section>
+
+</div>
+
+<!-- Stappenplannen toevoegen/wijzigen? Enkel plans.js aanpassen. -->
+<script src="plans.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
